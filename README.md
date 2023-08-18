@@ -27,7 +27,7 @@ Esse desafio foi criado para o #boracodar, um projeto da Rocketseat com desafios
 
 ### Links
 
-- Live Site URL: [Veja minha solução rodando](https://results-summary-component-main-henna-chi.vercel.app/)
+- Live Site URL: [Veja minha solução rodando](https://gerador-de-ticket.vercel.app/)
 
 ## Meu processo
 
