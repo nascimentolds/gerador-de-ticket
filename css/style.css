@@ -1,0 +1,294 @@
+:root {
+  /* Poduto */
+  --purple-normal: #8860E6;
+  --purple-dark: #5B409B;
+
+  /* Base */
+  --gray-dark: #202024;
+  --gray-light: #F3F4FE;
+  --white: #FFFFFF;
+
+  /* Feedback */
+  --sucess: #04D361;
+  --danger: #FF8F8F;
+
+  /* Degrade */
+  --degrade: #DEE0FC, #996DFF, #BC9FFF;
+
+  /* Tipografia */
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Space Grotesk', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('../images/img-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: var(--font-primary);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.title {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--degrade));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-family: var(--font-secondary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-block: 30px;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-family: var(--font-secondary);
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+/* INPUT NOME DE USUÁRIO */
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 16px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  padding-left: 45px;
+}
+
+.input-field::placeholder {
+  color: #000000;
+}
+
+/* BUTTON */
+
+.bt-gerar-ticket {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  font-family: var(--primary);
+  color: var(--white);
+  background-color: var(--purple-normal);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.bt-gerar-ticket:hover {
+  background-color: var(--purple-dark);
+}
+
+/* CARD TICKET */
+.card-ticket {
+  padding: 10px;
+  background-image: url('../images/bg-card-ticket.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+}
+
+.cover {
+  display: flex;
+  width: 55%;
+}
+
+.img-cover {
+  display:flex;
+  width: 100%;
+}
+
+.infos-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  background-color: var(--white);
+  padding: 10px;
+}
+
+.user-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.avatar {
+  width: 50%;
+}
+
+.img-user {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user-label {
+  font-family: var(--font-secondary);
+  font-size: 0.7em;
+  color: var(--purple-normal);
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+/* INFO EVENTO */
+.info-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--font-secondary);
+  font-size: 8px;
+  width: 100%;
+}
+
+.detail-event {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.evento-label {
+  width: 40%;
+}
+
+.evento-dado {
+  font-weight: bold;
+}
+
+.linhas {
+  width: 100%;
+}
+
+.erro {
+  display: none;
+  color: var(--danger);
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+.ticket-gerado {
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ticket-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-gerado {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container {
+    padding: 60px;
+  }
+
+  .card-ticket {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .texts {
+    padding: 20px;
+    padding-right: 120px;
+    width: 70%;
+  }
+
+  .title {
+    width: 90%;
+  }
+
+  .user-label {
+    font-size: 0.8em;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+
+  .info-event {
+    font-size: 11px;
+    margin-top: 25px;
+  }
+
+  .evento-label {
+    width: 60%;
+  }
+
+  .enveto-dado {
+    align-self: start;
+  }
+  
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Gerador de Ticket</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="content">
+        <div class="texts">
+          <h1 class="title">GERE SEU TICKET E COMPARTILHE COM O MUNDO</h1>
+          <form action="" class="form" id="form">
+            <span class="sub-title">DIGITE SEU USUÁRIO DO GITHUB</span>
+            <div class="input-icons">
+              <i class="fa fa-github icon"> </i>
+              <input class="input-field" type="text" id="user" placeholder="Nome de usuário" />
+            </div>
+            <span class="erro" id="erro">Usuário inválido. Verifique e tente novamente.</span>
+            <button type="button" class="bt-gerar-ticket" id="bt-busca">GERAR MEU TICKET</button>
+          </form>
+          <div class="ticket-gerado" id="ticket-gerado">
+            <div class="ticket-message">
+              <img src="/images/confirmado.svg" alt="Ticket gerado com sucesso" class="img-gerado">
+              <span class="sub-title">TICKET GERADO COM SUCESSO</span>
+            </div>
+            <button type="button" class="bt-gerar-ticket" id="download">FAZER DOWNLOAD</button>
+          </div>
+        </div>
+        <div class="card-ticket" id="ticket">
+          <div class="ticket">
+            <div class="cover">
+              <img
+                src="/images/img-cover-ticket.svg"
+                alt="Cover IA para Devs"
+                class="img-cover"
+              />
+            </div>
+            <div class="infos-user">
+              <div class="user-content">
+                <div class="avatar" id="avatar">
+                  <img
+                    src="/images/img-avatar.svg"
+                    alt="Avatar do usuário"
+                    class="img-user"
+                  />
+                </div>
+                <span class="user-label">TRIPULANTE</span>
+                <span class="user-name" id="user-name">Seu nome aqui</span>
+              </div>
+              <div class="info-event">
+                <div class="detail-event">
+                  <span class="evento-label">EVENTO</span>
+                  <span class="evento-dado">IA PARA DEVS</span>
+                </div>
+                <div class="detail-event">
+                  <span class="evento-label">DATA</span>
+                  <span class="evento-dado">14 - 16 AGO. 2023</span>
+                </div>
+                <div class="detail-event">
+                  <span class="evento-label">HORA</span>
+                  <span class="evento-dado">AO VIVO - 19H</span>
+                </div>
+                <div class="lines">
+                  <img src="/images/lines-svg.svg" alt="Linha Decorativas" class="linhas">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
